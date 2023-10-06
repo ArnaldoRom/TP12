@@ -65,15 +65,10 @@ public class ConstruirSA {
            String sql="UPDATE empleado SET estado=0,acceso=0 WHERE idEmpleado=1";
            
            PreparedStatement baja=conexion.prepareStatement(sql);
-           baja.executeUpdate();
-           
-            
-            
-            
+           baja.executeUpdate();           
          
         } catch (ClassNotFoundException| SQLException ex) {
-            JOptionPane.showMessageDialog(null,"Error al cargar driver "+ex);
-        
+            JOptionPane.showMessageDialog(null,"Error al cargar driver "+ex);       
            
         }
     }
